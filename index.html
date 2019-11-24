@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>site WebAgency</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<img src="css/images/logo.png" height="55px" />
+
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#scroll">Acceuil</a></li>
+				<li><a href="#serv">Services</a></li>
+				<li><a href="#projet">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="scroll">
+		<input type="radio" name="images" id="bg1" checked>
+		<input type="radio" name="images" id="bg2">
+		<div class="slideImg" id="one">
+		<img src="css/images/bg1.jpg" alt="child" width=99% height=350px />
+		<label for="bg2" class="pre"></label>
+		<label for="bg2" class="nxt"></label>
+		</div>
+		<div class="slideImg" id="two">
+		<img src="css/images/bg2.jpg" alt="child2" width=99% height=350px/>
+		<label for="bg1" class="pre"></label>
+		<label for="bg1" class="nxt"></label>
+		</div>
+	</div>
+	<div class="alltxt">
+		<p><span> WEBAGENCY </span>:L'AGENCE DE TOUS<br> VOS PROJETS !</p>
+		<p class="aide">Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+	</div>
+	<div id="serv">
+		<h2>NOS SERVICES</h2>
+		<div id="cercle"> </div>
+		<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua.Ut enim ad minim veniam.</h3>
+		<div id="firstServices">
+			<img src="css/images/mainFeature.png" alt="macbook" width="250%" height="250px">
+			<div id="contain">
+			<div id="ux">
+			<h4>UX design</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div id="ui">
+			<h4>UI design</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div id="seo">
+			<h4>SEO</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+		</div>
+	</div>
+	</div>
+	<div id="projet">
+		<h2>NOS PROJETS</h2>
+		<h3>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+		<div class="menu">
+			<ul>
+				<li>All Works</li>
+				<li>Creative</li>
+				<li>Corporate</li>
+				<li>Portfolio</li>
+			</ul>
+		</div>
+		<i class="fas fa-chart-line"></i>
+	</div>
+	<div id="contact">
+		<form method="post" action="traitement.php">
+			<h5>Contact Info</h5>
+			<p>WebAgency SAS</p>
+			<p>25 Rue d'Hauteville 75010 Paris</p>
+			<p>Tel : 01 02 03 04 05</p>
+			<input type="text" name="name" placeholder="Name"/>
+			<input type="email" name="mail" placeholder="Email"/>
+			<input type="text" name="subject" placeholder="Subject"/>
+			<textarea name="message" rows="10" cols="20">Message</textarea>
+			<button>Send Message</button>
+		</form>
+	</div>
+</body>
+</html>
