@@ -3,13 +3,14 @@
 <head>
 	<title>site WebAgency</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="font/fonts.css"/>
 
 </head>
 <body>
 	<header>
 		<div id="logo">
-			<img src="css/images/logo.png" height="55px" />
+			<img src="images/logo.png" height="50.5px" />
 
 		</div>
 		<nav>
@@ -21,31 +22,32 @@
 			</ul>
 		</nav>
 	</header>
-	
-	<div id="scroll">
-		<input type="radio" name="images" id="bg1" checked>
-		<input type="radio" name="images" id="bg2">
-		<div class="slideImg" id="one">
-		<img src="css/images/bg1.jpg" alt="child" width=99% height=350px />
-		<label for="bg2" class="pre"></label>
-		<label for="bg2" class="nxt"></label>
-		</div>
-		<div class="slideImg" id="two">
-		<img src="css/images/bg2.jpg" alt="child2" width=99% height=350px/>
-		<label for="bg1" class="pre"></label>
-		<label for="bg1" class="nxt"></label>
-		</div>
+	<div class="scroll">
+		<img src="images/bg1.jpg" alt="child" width="100%" height="493px" />
 	</div>
+    <svg class="left" width="60" height="60">
+        <path d="M 20 10 L 30 0 L 60 30 L 30 60 L 20 50 L 40 30"></path>
+    </svg>
+    <svg class="right" width="60" height="60">
+        <path d="M 40 10 L 30 0 L 0 30 L 30 60 L 40 50 L 20 30"></path>
+    </svg>
+    <div class="backArrow Lt"></div>
+
+    <div class="arrow R"></div>
+    <div class="backArrow Rt"></div>
+
+	
 	<div class="alltxt">
-		<p><span> WEBAGENCY </span>:L'AGENCE DE TOUS<br> VOS PROJETS !</p>
+		<p><span> WEBAGENCY </span>: L'AGENCE DE TOUS<br> VOS PROJETS !</p>
 		<p class="aide">Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+        <button> Plus d'infos </button>
 	</div>
 	<div id="serv">
 		<h2>NOS SERVICES</h2>
 		<div class="cercle"> </div>
 		<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua.Ut enim ad minim veniam.</h3>
 		<div id="firstServices">
-			<img src="css/images/mainFeature.png" alt="macbook" width="570px" height="370px">
+			<img src="images/mac.png" alt="macbook" width="410px" height="250px">
 			<div id="contain">
 			<div id="ux">
 			<h4>UX design</h4>
