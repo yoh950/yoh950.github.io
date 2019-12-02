@@ -70,17 +70,16 @@ nav ul {
 	justify-content: space-between;
 	position: relative;
 	right: 130px;
-    border:3px solid red;
 
 }
 nav li {
-    height: 6em;
+    width:5vw;
+    height: 14vh;
 	font-family: 'Roboto';
-	font-size: 13px;
+	font-size: 1vw;
 	color: #555555;
     text-align:center;
-    line-height: 6em;  
-    border:3px solid green;
+    line-height: 14vh;
     
 
    
@@ -94,28 +93,19 @@ nav li {
 .back-arrow{
     width: 4em;
     height: 2em;
-    /*background: #424246;*/
-    background: red;
+    background: rgba(51,50,54,0.7);
     position:absolute;
     top: 50%;
-    left:0; 
+    left:-1.2%; 
     border-radius: 2em 2em 0 0;
     transform:rotate(90deg);
     z-index:98;
-    border: 1px solid yellow;
 }
-.right{
+.Right{
     transform:rotate(-90deg);
-    left:calc(100% - 40px);
+    left:calc(99.4% - 40px);
 }
-.left{
-    fill:white;
-    position:absolute;
-    top:43%;
-    left: 97%;
-    transform:scale(0.3);
-    z-index:99;
-}
+
 .alltxt{
 	font-family: 'RobotoBlack', Impact;
 	font-size: 2.6vw;
@@ -124,14 +114,12 @@ nav li {
 	left: 135px;
 	top: 249px;
 	z-index: 98;
-    border:3px solid blue;
-
 }
 span{
 	color: #5cadd3;
 }
 .aide{
-	font-size: 12px;
+	font-size: 1vw;
 	font-family: 'RobotoMedium', Impact;
     margin-top:15px;
 }
@@ -139,9 +127,9 @@ button{
     background-color:#5cadd3;
     color:white;
     font-family: 'RobotoBold', Arial, Helvetica, sans-serif;
-    font-size:15px;
-    width:110px;
-    height:40px;
+    font-size:1.2vw;
+    width:9vw;
+    height:6vh;
     margin-top:22px;
     box-shadow: 0px 1px 0px #4494bb;
 }
@@ -161,7 +149,7 @@ button{
 	display: flex;
 	position: relative;
 	top: 19.5px;
-	left: 133.5px;
+	left: 10vw;
 }
 
 h2{
