@@ -52,7 +52,7 @@ body{
 }
 header{
 	width: 100%;
-	height: 14%;
+	height: 12.5%;
 	background-color: white;
 	display: flex;
 	justify-content: space-between;
@@ -63,13 +63,13 @@ header{
 }
 
 nav ul {
-	width: 120%;
+	width: 110%;
 	height: 100%;
 	list-style-type: none;
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-	right: 130px;
+	right: 165px;
 
 }
 nav li {
@@ -95,7 +95,7 @@ nav li {
     height: 2em;
     background: rgba(51,50,54,0.7);
     position:absolute;
-    top: 50%;
+    top: 45%;
     left:-1.2%; 
     border-radius: 2em 2em 0 0;
     transform:rotate(90deg);
@@ -108,10 +108,10 @@ nav li {
 
 .alltxt{
 	font-family: 'RobotoBlack', Impact;
-	font-size: 2.6vw;
+	font-size: 2.5vw;
 	color: white;
 	position: absolute;
-	left: 135px;
+	left: 133px;
 	top: 249px;
 	z-index: 98;
 }
@@ -119,16 +119,16 @@ span{
 	color: #5cadd3;
 }
 .aide{
-	font-size: 1vw;
+	font-size: 0.976562462745vw;
 	font-family: 'RobotoMedium', Impact;
     margin-top:15px;
+    letter-spacing:0.05px;
 }
 button{
     background-color:#5cadd3;
-    border-color: #5cadd3;
     color:white;
     font-family: 'RobotoBold', Arial, Helvetica, sans-serif;
-    font-size:1.2vw;
+    font-size:1.25vw;
     width:9vw;
     height:6vh;
     margin-top:22px;
@@ -150,8 +150,8 @@ button{
 #logo{
 	display: flex;
 	position: relative;
-	top: 19.5px;
-	left: 10vw;
+	top: 19.6px;
+	left: 10.5vw;
 }
 
 h2{
@@ -243,6 +243,8 @@ a{
     font-family: 'RobotoMedium', Arial, Helvetica, sans-serif;
 	color: #555555;
 	text-decoration: none;
+    position:relative;
+    top:-5%;
 }
 li:hover{
 	color: #30a2bf;
