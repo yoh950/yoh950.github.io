@@ -125,13 +125,15 @@ span{
 }
 button{
     background-color:#5cadd3;
+    border-color: #5cadd3;
     color:white;
     font-family: 'RobotoBold', Arial, Helvetica, sans-serif;
     font-size:1.2vw;
     width:9vw;
     height:6vh;
     margin-top:22px;
-    box-shadow: 0px 1px 0px #4494bb;
+    border-bottom: 2px solid #4494bb;
+    border-radius: 2px 2px 2px 2px;
 }
 
 #contain{
