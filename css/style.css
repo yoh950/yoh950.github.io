@@ -55,25 +55,25 @@ header{
 }
 .logo img{
     position: relative;
-    top: 21.9%;
+    top: 22%;
     left: 10.5%;
-    width: 255px;
-    height: 56px;
    
 }
 nav{
     float:right;
     position: relative;
-    left: -21%;
-    top: 19%;
+    left: -11.2%;
+    top: 40%;
 }
 ul li {
     display:inline;
-    margin-right:20px;
+    margin-right:0px;
     font-size:1vw;
 	font-family: 'RobotoMedium';
 	color: #555555;
-    padding-top:13%;
+    padding-top:10%;
+    padding-left: 10px;
+    padding-right: 10px;
 
 }
 li:hover{
