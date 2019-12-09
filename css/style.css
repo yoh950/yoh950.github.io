@@ -62,22 +62,23 @@ header{
 nav{
     float:right;
     position: relative;
-    left: -11.2%;
-    top: 40%;
+    left: -11.8%;
+    top: 39%;
 }
 ul li {
     display:inline;
     margin-right:0px;
-    font-size:1vw;
+    font-size:12.3px;
 	font-family: 'RobotoMedium';
 	color: #555555;
-    padding-top:10%;
-    padding-left: 10px;
+    padding-top:13.2%;
+    padding-left: 10.4px;
     padding-right: 10px;
+    letter-spacing:0.1px;
 
 }
 li:hover{
-	border-top: 2px solid #30a2bf;
+	border-top: 4px solid #30a2bf;
 	border-spacing: 20px;
 }
 
