@@ -1,1 +1,34 @@
-﻿
+﻿h1{
+    width:100%;
+
+}
+#menu{
+    width:100%;
+    position:absolute;
+    top: 24%;
+    left: 0%;
+}
+#menu p{
+    float:none;
+    position:relative;
+    top:0%;
+    left:30%;
+    padding-top: 4%;
+
+}
+#menu p:hover{
+    border-top:4px solid #30a2bf;
+}
+.scroll{
+    margin-top:91px;
+}
+h1 img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    top:35%;
+    left:0;
+}
+.service{
+    top:690px;
+}
