@@ -46,41 +46,153 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-header{
+#accueil{
     width:100%;
     height:91px;
+
 }
-.logo{
-    height:100%;
+h1{
+    height:91px;
+    width:50%;
 }
-.logo img{
+h1 img{
+    width: 230px;
+    height: 50.6px;
     position: relative;
     top: 22%;
-    left: 10.5%;
+    left: 21%;
    
 }
-nav{
+#menu{
+    width:50%;
+    height:91px;
     float:right;
-    position: relative;
-    left: -10.5%;
-    top: 39%;
+    position: absolute;
+    left: 50%;
+    top:0%;
 }
-ul li {
+#menu a {
+    text-decoration:none;
+}
+
+#menu p{
     display:inline;
     margin-right:3px;
     font-size:12.3px;
 	font-family: 'RobotoMedium';
 	color: #555555;
-    padding-top:12.5%;
+    padding-top:5.5%;
     padding-left: 10.4px;
     padding-right: 10px;
     letter-spacing:0.1px;
-
+    text-decoration:none;
+    position: relative;
+    top: 39%;
+    left: 35%;
 }
-li:hover{
+#menu p:hover{
 	border-top: 4px solid #30a2bf;
 	border-spacing: 20px;
 }
-
-
+.scroll{
+    width:100%;
+    height:493px;
+    position:absolute;
+}
+.scroll img{
+    position:absolute;
+}
+.back-arrow{
+    width: 60px;
+    height: 32px;
+    background: rgba(51,50,54,0.7);
+    position:relative;
+    top: 46.5%;
+    left:-14px;
+    border-radius: 55px 55px 0 0;
+    transform:rotate(90deg);
+    z-index:100;
+}
+.Right {
+    transform: rotate(-90deg);
+    left: calc(99.5% - 40px);
+    top:40%;
+}
+.fa-angle-left, .fa-angle-right{
+    color: white;
+    transform:rotate(-90deg);
+    position:absolute;
+    left:37%;
+    z-index:99;
+}
+.right-arrow{
+    position:absolute;
+    right:37%;
+}
+.Right i{
+    transform:rotate(90deg);
+}
+.alltxt{
+	font-family: 'RobotoBlack', Impact;
+	font-size: 32px;
+	color: white;
+	position: absolute;
+	left: 10.4%;
+	top: 31.7%;
+	z-index: 98;
+}
+span{
+	color: #5cadd3;
+}
+.aide{
+	font-size: 12.3px;
+	font-family: 'RobotoMedium', Impact;
+    margin-top:15px;
+    letter-spacing:0.05px;
+}
+button{
+    background-color:#5cadd3;
+    color:white;
+    font-family: 'RobotoMedium', Arial, Helvetica, sans-serif;
+    font-size:16.5px;
+    width:114px;
+    height:42px;
+    margin-top:22px;
+    border-color: #4494bb;
+    border-bottom: 3px solid #4494bb;
+    border-radius: 3px 3px 3px 3px;
+}
+.service{
+    width:100%;
+    position:absolute;
+    top:584px;
+}
+h2{
+    text-align:center;
+	position:relative;
+    left:6px;
+    top:3px;
+    font-size: 35.5px;
+	font-family: 'RobotoBold', Arial, Helvetica, sans-serif;
+    margin-bottom:15px;
+}
+h3{
+	color: #7e8185;
+	font-family: 'RobotoBold', Impact, Arial;
+	width: 100%;
+	font-size: 11.4px;
+    line-height:20px;
+	text-align: center;
+    position:relative;
+    left:5px;
+    letter-spacing:0.2px;
+}
+.mac img{
+    position:relative;
+    top:78px;
+    left:138px;
+}
+#contain{
+    float:right;
+}
 

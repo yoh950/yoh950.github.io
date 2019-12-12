@@ -1,27 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>site WebAgency</title>
-	<meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-	<link rel="stylesheet" type="text/css" media="screen and (max-width:1030px)" href="css/small-resolution.css"/>
+    <title>site WebAgency</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:900px)" href="css/small-resolution.css" />
     <link href="fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet" />
-    <link rel="stylesheet" href="font/fonts.css"/>
+    <link rel="stylesheet" href="font/fonts.css" />
 
 </head>
 <body>
-	<header>
-        <div class="logo">
-        <img src="images/logo.png" alt="webAgency" style="width: 230px;height: 50.6px"/>
-        <nav>
-            <ul>
-                <li> Accueil </li>
-                <li> Services </li>
-                <li> Portfolio </li>
-                <li> Contact </li>
-            </ul>
+    <!-- HEADER | ACCUEIL -->
+    <header id="accueil">
+        <nav id="nav">
+            <!-- MENU -->
+            <h1>
+                <img alt="Logo" src="images/logo.png">
+            </h1>
+            <div id="menu">
+                <a href="#accueil">
+                    <p>Accueil</p>
+                </a>
+                <a href="#services">
+                    <p>Services</p>
+                </a>
+                <a href="#projet">
+                    <p>Portfolio</p>
+                </a>
+                <a href="#contact">
+                    <p>Contact</p>
+                </a>
+            </div>
         </nav>
-        </div>
     </header>
+    <div class="container">
+        <!--IMAGE-->
+        <div class="scroll">
+            <img src="images/bg1.jpg" alt="child" width="100%" height="493px" />
+            <div class="back-arrow Left">
+                <i class="fas fa-angle-left fa-2x"></i>
+            </div>
+            <div class="back-arrow Right">
+                <i class="fas fa-angle-right fa-2x"></i>
+            </div>
+            <!--TEXT -->
+            <div class="alltxt">
+                <p><span> WEBAGENCY </span>: L'AGENCE DE TOUS<br> VOS PROJETS !</p>
+                <p class="aide">Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+                <button> Plus d'infos </button>
+            </div>
+        </div>
+        <div class="service">
+            <h2>NOS SERVICES</h2>
+            <div class="circle"> </div>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua.Ut enim ad minim veniam.</h3>
+            <div id="firstServices">
+                <div class="mac">
+                    <img src="images/mac.png" alt="macbook" width="450px" height="290px">
+                    <div id="contain">
+                        <div id="ux">
+                            <i class="fas fa-chart-line fa-2x"></i>
+                            <i class="fas fa-circle-notch fa-5x"></i>
+                            <div class="circleicon"> </div>
+                            <h4>UX design</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div id="ui">
+                            <i class="fas fa-cubes fa-2x"></i>
+                            <i class="fas fa-circle-notch fa-5x"></i>
+                            <div class="circleicon"> </div>
+                            <h4>UI design</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div id="seo">
+                            <i class="fas fa-chart-pie fa-2x"></i>
+                            <i class="fas fa-circle-notch fa-5x"></i>
+                            <div class="circleicon"> </div>
+                            <h4>SEO</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
