@@ -174,7 +174,33 @@ h2{
     top:3px;
     font-size: 35.5px;
 	font-family: 'RobotoBold', Arial, Helvetica, sans-serif;
-    margin-bottom:15px;
+    margin-bottom:10px;
+}
+.circle{
+	width: 10px;
+	height:10px;
+	border-radius: 5px;
+	background-color: #5cadd3;
+	margin-left: 50%;
+    margin-bottom:10px;
+}
+.circle:before{
+	content: '';
+	width: 50px;
+	border-bottom:2px #ededed solid;
+	display: inline-block;
+	position: relative;
+	top: -7px;
+	left: -53px;
+}
+.circle:after{
+	content: '';
+	width: 50px;
+	border-bottom:2px #ededed solid;
+	display: inline-block;
+	position: relative;
+	top: -23.5px;
+	left: 13px;
 }
 h3{
 	color: #7e8185;
@@ -194,5 +220,16 @@ h3{
 }
 #contain{
     float:right;
+}
+.fa-circle-notch{
+    position:relative;
+    left:-150px;
+    top:60px;
+    transform:rotate(90deg);
+}
+.fa-chart-line, .fa-cubes, .fa-chart-pie{
+    position: relative;
+    left: -87px;
+    top: 41px;
 }
 
