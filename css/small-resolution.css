@@ -39,3 +39,13 @@ h1 img{
 .service{
     top:690px;
 }
+.alltxt{
+    font-size:20px;
+
+}
+.aide{
+    font-size:9.3px;
+}
+button{
+    transform:scale(0.9);
+}
