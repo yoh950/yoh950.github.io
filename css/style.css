@@ -221,15 +221,20 @@ h3{
 #contain{
     float:right;
 }
+#contain p{
+    text-align:justify;
+}
 .fa-circle-notch{
     position:relative;
     left:-150px;
     top:60px;
     transform:rotate(90deg);
+    color:#e6e5e6;
 }
 .fa-chart-line, .fa-cubes, .fa-chart-pie{
     position: relative;
     left: -87px;
     top: 41px;
+    color:#7bbddc;
 }
 

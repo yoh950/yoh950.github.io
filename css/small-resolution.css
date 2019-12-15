@@ -1,12 +1,19 @@
-﻿h1{
+﻿#accueil{
+    height:140px;
+}
+#nav{
+    height:140px;
+}
+h1{
     width:100%;
 
 }
 #menu{
-    width:100%;
-    position:absolute;
-    top: 24%;
-    left: 0%;
+    width:auto;
+    height:auto;
+    position:relative;
+    top: 8%;
+    left: -42%;
 }
 #menu p{
     float:none;
@@ -20,7 +27,7 @@
     border-top:4px solid #30a2bf;
 }
 .scroll{
-    margin-top:91px;
+    
 }
 h1 img{
     display:block;
