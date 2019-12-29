@@ -46,195 +46,191 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-#accueil{
-    width:100%;
-    height:91px;
-
+body {
+    background: #FFF;
+    margin: 0;
+    padding: 0;
 }
-h1{
-    height:91px;
-    width:50%;
+p {
+    font-size: 0.8em;
+    font-weight: 500;
 }
-h1 img{
-    width: 230px;
-    height: 50.6px;
-    position: relative;
-    top: 22%;
-    left: 21%;
-   
+.blue-color {
+    color: rgb(92, 173, 211);
 }
-#menu{
-    width:50%;
-    height:91px;
-    float:right;
-    position: absolute;
-    left: 50%;
-    top:0%;
+#nav {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background: #FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+}
+#menu {
+    margin-left: 180px;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 #menu a {
-    text-decoration:none;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    border-top: 6px solid #FFF;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(120, 120, 120);
+
+}
+#menu a:hover {
+    border-top: 6px solid rgb(92, 173, 211);
+    color: rgb(85, 85, 85);
+
+}
+#slider {
+    width: 100%;
+    height: 493px;
+}
+#slider {
+    margin: auto;
+    margin-top: 93px;
+}
+.slide_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.slide_img img {
+    width: 100%;
+    height: 100%;
+}
+#i1, #i2, #i3 {
+    display: none;
+}
+.pre, .nxt {
+    position: absolute;
+    top: 46%;
+    z-index: 99;
+    cursor: pointer;
+}
+.pre {
+    left: 0;
+}
+.nxt {
+    right: 0;
+}
+.arrow {
+    position: relative;
+    top: 46%;
+    display:flex;
+    z-index: 9;
+}
+.arrow right_arrow {
+    position: relative;
+    left: 84.5%;
 }
 
-#menu p{
-    display:inline;
-    margin-right:3px;
-    font-size:12.3px;
-	font-family: 'RobotoMedium';
-	color: #555555;
-    padding-top:5.5%;
-    padding-left: 10.4px;
-    padding-right: 10px;
-    letter-spacing:0.1px;
-    text-decoration:none;
+#i1:checked ~ #one,
+#i2:checked ~ #two {
+    z-index: 9;
+}
+.alltxt {
+    display: inline-block;
     position: relative;
-    top: 39%;
-    left: 35%;
-}
-#menu p:hover{
-	border-top: 4px solid #30a2bf;
-	border-spacing: 20px;
-}
-.scroll{
-    width:100%;
-    height:493px;
-    position:absolute;
-}
-.scroll img{
-    position:absolute;
-}
-.back-arrow{
-    width: 60px;
-    height: 32px;
-    background: rgba(51,50,54,0.7);
-    position:relative;
-    top: 46.5%;
-    left:-14px;
-    border-radius: 55px 55px 0 0;
-    transform:rotate(90deg);
-    z-index:100;
-}
-.Right {
-    transform: rotate(-90deg);
-    left: calc(99.5% - 40px);
-    top:40%;
-}
-.fa-angle-left, .fa-angle-right{
+    font-weight: bold;
+    font-size: 168%;
     color: white;
-    transform:rotate(-90deg);
-    position:absolute;
-    left:37%;
-    z-index:99;
+    top: 39%;
+    left: 12%;
+    z-index: 9;
 }
-.right-arrow{
-    position:absolute;
-    right:37%;
+span {
+    color: blue;
+
 }
-.Right i{
-    transform:rotate(90deg);
-}
-.alltxt{
-	font-family: 'RobotoBlack', Impact;
-	font-size: 32px;
-	color: white;
-	position: absolute;
-	left: 10.4%;
-	top: 31.7%;
-	z-index: 98;
-}
-span{
-	color: #5cadd3;
-}
-.aide{
-	font-size: 12.3px;
-	font-family: 'RobotoMedium', Impact;
-    margin-top:15px;
-    letter-spacing:0.05px;
-}
-button{
-    background-color:#5cadd3;
-    color:white;
+button {
+    background-color: #5cadd3;
+    color: white;
     font-family: 'RobotoMedium', Arial, Helvetica, sans-serif;
-    font-size:16.5px;
-    width:114px;
-    height:42px;
-    margin-top:22px;
+    font-size: 16.5px;
+    width: 114px;
+    height: 42px;
+    margin-top: 22px;
     border-color: #4494bb;
     border-bottom: 3px solid #4494bb;
     border-radius: 3px 3px 3px 3px;
 }
-.service{
-    width:100%;
-    position:absolute;
-    top:584px;
+.service {
+    margin-top: 100px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+h2,h3 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Robotobold', sans-serif;
 }
 h2{
-    text-align:center;
-	position:relative;
-    left:6px;
-    top:3px;
-    font-size: 35.5px;
-	font-family: 'RobotoBold', Arial, Helvetica, sans-serif;
-    margin-bottom:10px;
+    font-size: 235%;
+    letter-spacing: 0;
+    margin: 14px;
+    margin-bottom: 10px;
 }
-.circle{
-	width: 10px;
-	height:10px;
-	border-radius: 5px;
-	background-color: #5cadd3;
-	margin-left: 50%;
-    margin-bottom:10px;
+h3 {
+    margin: 1% 20%;
+    color: #85888c;
+    font-size: 12px;
+    text-align: center;
+    line-height: 24px;
 }
-.circle:before{
-	content: '';
-	width: 50px;
-	border-bottom:2px #ededed solid;
-	display: inline-block;
-	position: relative;
-	top: -7px;
-	left: -53px;
+.mac {
+    width: 75%;
+}
+.client {
+    position: relative;
+    top: 20%;
+}
+.description {
+    display: flex;
+    height: 500px;
+}
+.circle {
+    width: 12px;
+    height:12px;
+    border-radius: 10px;
+    background-color: #5cadd3;
+    margin-left: 50%;
+}
+.circle:before {
+    content: '';
+    width: 3em;
+    border-bottom:2px #ededed solid;
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    left: -53px;
 }
 .circle:after{
-	content: '';
-	width: 50px;
-	border-bottom:2px #ededed solid;
-	display: inline-block;
-	position: relative;
-	top: -23.5px;
-	left: 13px;
-}
-h3{
-	color: #7e8185;
-	font-family: 'RobotoBold', Impact, Arial;
-	width: 100%;
-	font-size: 11.4px;
-    line-height:20px;
-	text-align: center;
-    position:relative;
-    left:5px;
-    letter-spacing:0.2px;
-}
-.mac img{
-    position:relative;
-    top:78px;
-    left:138px;
-}
-#contain{
-    float:right;
-}
-#contain p{
-    text-align:justify;
-}
-.fa-circle-notch{
-    position:relative;
-    left:-150px;
-    top:60px;
-    transform:rotate(90deg);
-    color:#e6e5e6;
-}
-.fa-chart-line, .fa-cubes, .fa-chart-pie{
+    content: '';
+    width: 3em;
+    border-bottom:2px #ededed solid;
+    display: inline-block;
     position: relative;
-    left: -87px;
-    top: 41px;
-    color:#7bbddc;
+    top: -23.5px;
+    left: 15px;
 }
-
+.mac img {
+    width: 460px;
+    height: 288px;
+    position: relative;
+    top: 6%;
+    left: 16%;
+}
