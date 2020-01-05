@@ -93,14 +93,10 @@ p {
 
 }
 #slider {
-    position: absolute;
-    top: 90px;
-    width: 100%;
-    height: 493px;
-    
+    position: relative;
+    width: 100%;  
 }
 .slide_img {
-    position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -110,6 +106,9 @@ p {
     height: 100%;
 }
 #i1, #i2, #i3 {
+    display: none;
+}
+#two {
     display: none;
 }
 .pre, .nxt {
@@ -124,16 +123,7 @@ p {
 .nxt {
     right: 0;
 }
-.arrow {
-    position: relative;
-    top: 46%;
-    display:flex;
-    z-index: 9;
-}
-.arrow right_arrow {
-    position: relative;
-    left: 84.5%;
-}
+
 
 #i1:checked ~ #one,
 #i2:checked ~ #two {
@@ -141,7 +131,7 @@ p {
 }
 .alltxt {
     display: inline-block;
-    position: relative;
+    position: absolute;
     font-weight: bold;
     font-size: 2.5rem;
     color: white;
@@ -173,18 +163,19 @@ button {
 }
 .timeline {
     position: absolute;
-    top: 489px;
+    bottom: 0.7%;
+    left: 0%;
     width: 10%;
     height: 4px;
     background-color: #4494bb;
     z-index: 9;
 }
 #services {
-    position: absolute;
+    /*position: absolute;
     top: 650px;
     width: 100%;
     height: 20%;
-    justify-content: center;
+    justify-content: center;*/
 }
 h2,h3 {
     display: flex;
@@ -194,10 +185,11 @@ h2,h3 {
 h2{
     font-size: 235%;
     letter-spacing: 0;
-    margin: 14px;
+    padding-top: 25px;
     margin-bottom: 10px;
 }
-h3 {
+.definition {
+    font-family: 'Robotobold', sans-serif;
     margin: 1% 20%;
     color: #85888c;
     font-size: 12px;
@@ -205,14 +197,10 @@ h3 {
     line-height: 24px;
 }
 .mac {
-    width: 75%;
+    width: 50%;
 }
 .client {
-    position: relative;
-    top: 21%;
-    right: 3%;
-    width: 690px;
-    height: 395px;
+    width: 50%;
 }
 .description {
     display: flex;
@@ -231,7 +219,7 @@ h3 {
     border-bottom:2px #ededed solid;
     display: inline-block;
     position: relative;
-    top: -5px;
+    top: -6px;
     left: -53px;
 }
 .circle:after{
@@ -240,8 +228,8 @@ h3 {
     border-bottom:2px #ededed solid;
     display: inline-block;
     position: relative;
-    top: -23.5px;
-    left: 15px;
+    top: -22.3px;
+    left: 16px;
 }
 .mac img {
     width: 460px;
@@ -249,6 +237,9 @@ h3 {
     position: relative;
     top: 6%;
     left: 16%;
+}
+.UX {
+    margin-top: 108px;
 }
 .UX, .UI, .SEO {
     display: flex;
@@ -259,16 +250,13 @@ h3 {
 
 .mycircle {
     position: relative;
-    width: 50px;
-    height: 50px;
+    padding: 15px;
     border-radius: 50%;
-    border: 2px solid #e5e5e5;
+    border: 1px solid #e5e5e5;
     margin-right: 20px;
+    margin-left: 15px;
 }
 .mycircle i {
-    position: relative;
-    top: 55%;
-    left: 30%;
     color: #5cadd3;
 }
 .round {
@@ -276,9 +264,9 @@ h3 {
     height:12px;
     border-radius: 10px;
     background-color: #5cadd3;
-    position: relative;
+    position: absolute;
     top: 37%;
-    left: 90%;
+    left: 93%;
 }
 h4 {
     font-family: 'Robotobold', sans-serif;
@@ -289,9 +277,6 @@ h4 {
     color: #85888c;
 }
 #projet {
-    position: absolute;
-    top: 1200px;
-    width: 100%;
     background-color: #f5f5f5;
 }
 .buttonMenu {
@@ -303,23 +288,47 @@ h4 {
 }
 .grid{
     display: grid;
-    grid-template-columns: repeat(4, 300px);
+    grid-template-columns: repeat(4, 1fr);
     width: 100%;
     grid-gap: 20px;
     justify-content: center;
-    margin-top: 50px;
+    margin: 50px 20px;
+}
+.pictures {
+    position: relative;
 }
 .pictures img {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
 }
-#projet img:hover {
+.items {
     position: absolute;
-    border: 2px solid black;
+    left: 0%;
+    bottom: 1.2px;
+    height: 30%;
+    width: 100%;
+    background-color: black;
+    z-index: 2;
+    opacity: 0;
+}
+.object {
+    position: absolute;
+    left: 0%;
+    bottom: 5%;
+    width: 100%;
+    opacity: 0;
+    color: white;
+    text-align: center;
+}
+.pictures:hover .items {
+    opacity: 0.4;
+}
+.pictures:hover .object {
+    opacity: 1;
+    color: #FFF;
 }
 #contact {
-    position: absolute;
-    top: 2000px;
     width: 100%;
+    margin-top: 150px;
 
 }
