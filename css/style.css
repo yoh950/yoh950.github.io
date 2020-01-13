@@ -59,7 +59,7 @@ p {
     color: rgb(92, 173, 211);
 }
 #nav {
-    /*position: fixed;*/
+    position: fixed;
     top: 0;
     height: 90px;
     width: 100%;
@@ -93,10 +93,15 @@ p {
 
 }
 #slider {
+    width: 100%;
+    height: 493px;
+}
+#slider {
+    margin-top: 93px;
     position: relative;
-    width: 100%;  
 }
 .slide_img {
+    position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -106,9 +111,6 @@ p {
     height: 100%;
 }
 #i1, #i2, #i3 {
-    display: none;
-}
-#two {
     display: none;
 }
 .pre, .nxt {
@@ -123,7 +125,16 @@ p {
 .nxt {
     right: 0;
 }
-
+.arrow {
+    position: relative;
+    top: 46%;
+    display:flex;
+    z-index: 9;
+}
+.arrow right_arrow {
+    position: relative;
+    left: 84.5%;
+}
 
 #i1:checked ~ #one,
 #i2:checked ~ #two {
@@ -135,7 +146,7 @@ p {
     font-weight: bold;
     font-size: 2.5rem;
     color: white;
-    top: 30%;
+    top: 45%;
     left: 10.5%;
     z-index: 9;
     font-family: 'RobotoBlack', Impact;
@@ -163,20 +174,14 @@ button {
 }
 .timeline {
     position: absolute;
-    bottom: 0.7%;
+    bottom: 0.1%;
     left: 0%;
     width: 10%;
     height: 4px;
     background-color: #4494bb;
     z-index: 9;
 }
-#services {
-    /*position: absolute;
-    top: 650px;
-    width: 100%;
-    height: 20%;
-    justify-content: center;*/
-}
+
 h2,h3 {
     display: flex;
     justify-content: center;
@@ -243,14 +248,17 @@ h2{
 }
 .UX, .UI, .SEO {
     display: flex;
-    margin-bottom: 55px;
+    margin-bottom: 35px;
+    width: 85%;
+    line-height: 22px;
 }
 .icon {
 }
 
 .mycircle {
     position: relative;
-    padding: 15px;
+    height: 35px;
+    padding: 18px;
     border-radius: 50%;
     border: 1px solid #e5e5e5;
     margin-right: 20px;
@@ -270,7 +278,7 @@ h2{
 }
 h4 {
     font-family: 'Robotobold', sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .client p {
     font-family: 'Roboto', sans-serif;
@@ -282,72 +290,90 @@ h4 {
 .buttonMenu {
     margin-top: 50px;
 }
-.buttonMenu ul {
+.buttonMenu li {
     background-color: #e5e5e5;
     color: #75797d;
     padding: 15px;
     font-family: 'RobotoMedium', Impact;
     font-size: 14px;
+    position: relative;
 
 }
-.buttonMenu li {
+.buttonMenu ul {
     display: flex;
     text-align: center;
     justify-content: center;
 }
-.buttonMenu ul:hover {
+.buttonMenu li:hover {
     background-color: #5cadd3;
     color: #FFF;
     border-bottom: 4px solid #468cad;
+}
+.buttonMenu li:hover a {
+    background-color: #5cadd3;
+    color: #FFF;
+}
+.buttonMenu li:hover .triangle {
+    opacity: 1;  
+}
+.buttonMenu .first a {
+    color: #FFF;
+}
+.buttonMenu .first {
+    background-color: #5cadd3;
+    border-bottom: 4px solid #468cad;
+}
+.buttonMenu .first .triangle {
+    opacity: 1;
+}
+.buttonMenu a {
+    text-decoration: none;
+    color: #75797d;
+    font-family: 'RobotoMedium';
 }
 .first {
     border-radius: 5px 0 0 5px;
 }
 .last {
     border-radius: 0 5px 5px 0;
+
 }
-.triangleWorks {
+.triangle {
     position: absolute;
+    top: 105%;
     left: 39.5%;
     height : 0;
     width : 0;
     border-top : 10px solid #468cad;
     border-right : 6px solid transparent;
     border-left : 7px solid transparent;
+    opacity: 0;
 }
 .grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 100%;
+    width: 97%;
     grid-gap: 20px;
     justify-content: center;
     margin: 50px 20px;
 }
-.pictures {
+figure {
     position: relative;
 }
-.pictures img {
+figure img {
     width: 100%;
     height: 100%;
-}
-.items {
-    position: absolute;
-    left: 0%;
-    bottom: 0%;
-    height: 30%;
-    width: 100%;
-    background-color: black;
-    z-index: 2;
-    opacity: 0;
 }
 .object {
     position: absolute;
     left: 0%;
-    bottom: 5%;
-    width: 100%;
-    margin-left: 10px;
+    bottom: 1%;
+    width: calc(100% - 20px);
+    height: 30%;
+    padding: 10px;
     opacity: 0;
     color: white;
+    background-color: rgba(0, 0, 0, .5);
     z-index: 3;
     font-family: 'Robotobold';
 }
@@ -359,17 +385,178 @@ h4 {
 .object h5{
     margin-left: 10px;
 }
-.pictures:hover .items {
-    opacity: 0.4;
-}
-.pictures:hover .object {
+
+figure:hover .object {
     opacity: 1;
+    color: #FFF;
+}
+.gridCircle {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: #5cadd3;
+    z-index: 4;
+    opacity: 0;
+}
+figure:hover .gridCircle {
+    opacity: 1;
+}
+.gridCircle i {
     color: #FFF;
 }
 #contact {
     width: 100%;
-    margin-top: 150px;
+}
+.map {
+    position: relative;
+    width: 100%;
+}
+iframe {
+    opacity: 0.8;
+    z-index: 5;
+}
+.blue {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 450px;
+    background-color: #2fb3f0;
+    z-index: -1;
 }
 .formulaire {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    height: 80%;
+    width: 20%;
     z-index: 3;
+    background-color: rgba(255, 255, 255, .7);
+    margin: 15px;
+    font-family: 'Roboto';
+}
+iframe {
+    opacity: 0.8;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    color: #75797d;
+}
+.formulaire h5 {
+    font-family: 'Robotobold';
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+h6{
+    font-family: 'RobotoMedium';
+    font-size: 0.8rem;
+}
+.formulaire p {
+    margin-bottom: 20px;
+}
+.formulaire input {
+    margin: 5px;
+}
+.formulaire button {
+    width: 60%;
+    height: 15%;
+    margin: 5px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+
+}
+.formulaire textarea {
+    margin-left: 5px;
+}
+@media screen and (max-width: 1024px) {
+    #nav {
+        display: initial;
+        height: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    #menu {
+        margin-left: 0;
+        justify-content: space-around;
+    }
+    #menu a {
+        margin-bottom: 15px;
+    }
+    #menu a:hover {
+    border-bottom: 4px solid rgb(92, 173, 211);
+    border-top: 4px solid rgb(92, 173, 211);
+    }
+    #nav p {
+        margin: auto;
+        height: auto;
+    }
+    .alltxt {
+        font-size: 2rem; 
+    }
+    .mycircle {
+        height: 25px;
+        padding: 12px;
+        border-radius: 100%;
+    }
+    .mycircle i {
+        font-size: 1em;
+    }
+    .formulaire button {
+        width: 98%;
+        margin-left: 5px;
+        margin-top: 5px;
+           
+    }
+}
+@media screen and (max-width: 960px) {
+    .alltxt{
+        font-size: 1.5rem;
+    }
+    .aide{
+        font-size: 0.6rem;
+    }
+    .definition {
+        font-size: 8px;
+    }
+    .description {
+        flex-direction: column;
+        height: auto;
+    }
+    .mac {
+        width: 100%;
+        text-align: center;
+    }
+    .mac img {
+        left: 0;
+    }
+    .client {
+        width: 100%;
+    }
+    .UX, .UI, .SEO {
+        width: 90%;
+    }
+    .UX {
+        margin-top: 0;
+    }
+    .formulaire p {
+        margin-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 650px) {
+    .alltxt{
+        font-size: 1rem;
+    }
+    .aide{
+        font-size: 0.4rem;
+    }
+    .formulaire {
+        width: 30%;
+    }
+
 }
