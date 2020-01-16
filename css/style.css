@@ -195,7 +195,7 @@ h2{
 }
 .definition {
     font-family: 'Robotobold', sans-serif;
-    margin: 1% 20%;
+    margin: 1% 5%;
     color: #85888c;
     font-size: 12px;
     text-align: center;
@@ -214,6 +214,7 @@ h2{
 .circle {
     width: 12px;
     height:12px;
+    border: 2px solid white;
     border-radius: 10px;
     background-color: #5cadd3;
     margin-left: 50%;
@@ -251,13 +252,13 @@ h2{
     margin-bottom: 35px;
     width: 85%;
     line-height: 22px;
+    align-items: flex-start;
 }
 .icon {
 }
 
 .mycircle {
     position: relative;
-    height: 35px;
     padding: 18px;
     border-radius: 50%;
     border: 1px solid #e5e5e5;
@@ -284,7 +285,7 @@ h4 {
     font-family: 'Roboto', sans-serif;
     color: #85888c;
 }
-#projet {
+#portfolio {
     background-color: #f5f5f5;
 }
 .buttonMenu {
@@ -364,7 +365,7 @@ figure img {
     width: 100%;
     height: 100%;
 }
-.object {
+figcaption {
     position: absolute;
     left: 0%;
     bottom: 1%;
@@ -377,23 +378,24 @@ figure img {
     z-index: 3;
     font-family: 'Robotobold';
 }
-.object p {
+figcaption p {
     margin-top: 7px;
     font-family: 'Roboto';
     margin-left: 10px;
 }
-.object h5{
+figcaption h5{
     margin-left: 10px;
 }
 
-figure:hover .object {
+figure:hover figcaption {
     opacity: 1;
     color: #FFF;
 }
 .gridCircle {
     position: absolute;
-    top: 50%;
+    top: -30%;
     right: 10%;
+    border: 2px solid white; 
     border-radius: 50%;
     padding: 15px;
     background-color: #5cadd3;
@@ -469,6 +471,9 @@ h6{
     font-size: 0.8rem;
 
 }
+#services, #portfolio, #contact {
+    padding-top: 90px;
+}
 .formulaire textarea {
     margin-left: 5px;
 }
@@ -482,6 +487,7 @@ h6{
     }
     #menu {
         margin-left: 0;
+        margin-top: 20px;
         justify-content: space-around;
     }
     #menu a {
@@ -499,7 +505,6 @@ h6{
         font-size: 2rem; 
     }
     .mycircle {
-        height: 25px;
         padding: 12px;
         border-radius: 100%;
     }
@@ -509,19 +514,36 @@ h6{
     .formulaire button {
         width: 98%;
         margin-left: 5px;
-        margin-top: 5px;
-           
+        margin-top: 5px;      
+    }
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 20px; 
+    }
+    figcaption {
+        opacity: 1;
+    }
+    .gridCircle {
+        opacity: 1;
+        top: -20%;
     }
 }
 @media screen and (max-width: 960px) {
+    .pre, .nxt {
+        opacity: 0;
+    }
+    .slide_img {
+        height: 60%;
+    }
     .alltxt{
         font-size: 1.5rem;
+        top: 70%;
+        width: 80%;
+        text-align: center;
+        color: rgb(92, 173, 211);
     }
-    .aide{
-        font-size: 0.6rem;
-    }
-    .definition {
-        font-size: 8px;
+    .timeline {
+        visibility: hidden;
     }
     .description {
         flex-direction: column;
@@ -543,20 +565,44 @@ h6{
     .UX {
         margin-top: 0;
     }
+    .buttonMenu{
+        margin-bottom: 20px;
+    }
+    .grid {
+        margin: auto;
+        grid-gap: 10px;
+    }
+    .formulaire {
+        position: relative;
+        right: 0;
+        width: auto;
+    }
+    .formulaire h5, h6 {
+        text-align: center;
+    }
     .formulaire p {
         margin-bottom: 10px;
+        text-align: center;
     }
+
 
 }
 @media screen and (max-width: 650px) {
-    .alltxt{
-        font-size: 1rem;
+    #slider {
+        position: initial;
+        margin-top: 114px;
+        height: 350px;
     }
-    .aide{
-        font-size: 0.4rem;
+    .slide_img img {
+        height: auto;
     }
-    .formulaire {
-        width: 30%;
+    .grid{
+        grid-template-columns: repeat(1, 1fr); 
     }
-
+    .alltxt {
+        top: 60%;
+    }
+    .formulaire button {
+        width: 50%;
+    }
 }
