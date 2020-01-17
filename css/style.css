@@ -596,6 +596,9 @@ h6{
     .slide_img img {
         height: 300px;
     }
+    #services, #portfolio, #contact {
+        padding-top: 100px;
+    }
     .grid{
         grid-template-columns: repeat(1, 1fr); 
     }
