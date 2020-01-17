@@ -591,7 +591,10 @@ h6{
     #slider {
         position: initial;
         margin-top: 114px;
-        height: 350px;
+        height: 270px;
+    }
+    .slide_img {
+        height: auto;
     }
     #services, #portfolio, #contact {
         padding-top: 90px;
@@ -600,7 +603,7 @@ h6{
         grid-template-columns: repeat(1, 1fr); 
     }
     .alltxt {
-        top: 360px;
+        top: 270px;
     }
     .mac img {
         left: -45px;    
