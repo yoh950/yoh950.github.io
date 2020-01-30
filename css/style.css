@@ -214,7 +214,7 @@ h2{
 .circle {
     width: 12px;
     height:12px;
-    border: 2px solid white;
+    border: 3px solid white;
     border-radius: 10px;
     background-color: #5cadd3;
     margin-left: 50%;
@@ -418,6 +418,7 @@ figure:hover .gridCircle {
 iframe {
     opacity: 0.8;
     z-index: 5;
+    width: 100%;
 }
 .blue {
     position: absolute;
@@ -584,17 +585,31 @@ h6{
         margin-bottom: 10px;
         text-align: center;
     }
-
+    .formulaire input {
+        width: 50%;
+        align-self: center;
+    }
+    .formulaire textarea {
+        width: 50%;
+        align-self: center;
+    }
+    .formulaire button {
+        width: 50%;
+        align-self: center;
+    }
 
 }
 @media screen and (max-width: 650px) {
     #slider {
-        position: initial;
         margin-top: 114px;
         height: 270px;
     }
     .slide_img {
+        position: relative;
         height: auto;
+    }
+    #two {
+        display: none;
     }
     #services, #portfolio, #contact {
         padding-top: 90px;
@@ -603,7 +618,8 @@ h6{
         grid-template-columns: repeat(1, 1fr); 
     }
     .alltxt {
-        top: 330px;
+        position: initial;
+        margin-left: 10%;
     }
     .mac img {
         left: -45px;    
